@@ -1,23 +1,3 @@
-# Zuri Chat To-do Plugin Endpoints
-    (http://todo.zuri.chat)
-    version: 1.0.0
-    host: todo.zuri.chat
-    basePath: /api/v1
-
-[#](#anchors-in-markdown)
-# Getting Started #
-Our API is organised around using HTTP verbs and REST. Our API accepts and returns JSON formatted payload
-
-# Authorization #
-User must be authenticated to use the Api 
-
-|  |  |
-| ------ | ------ |
-| Security Scheme Type | HTTP |
-| HTTP Authorization Scheme | bearer |
-
-
-
 # Create a Todo #
 This endpoint is used to create a todo
 |  |  |
@@ -107,6 +87,7 @@ Sample Response
             "type": "null",
             "user_id": "123"
         }
+    ]
 }
 ```
 
