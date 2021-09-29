@@ -102,3 +102,55 @@ Sample Response
     "message": "collection not found"
 }
 ```
+
+# Fetch User Todo By Id #
+This endpoint is used to fetch a single user todo
+|  |  |
+| ------ | ------ |
+| Request Type | ``` GET ``` |
+| Endpoint |  ``` /todo/{id}/{user_id}/show ``` |
+
+Body Params
+| Param	 | Required | Description |
+| ------ | ------ | ------ |
+| organisation_id |  yes | string |
+| todo_id |  yes | string |
+| user_id |  yes | integer |
+
+Sample Request
+```json
+
+      {
+            "organisation_id": "614679ee1a5607b13c00bcb7",
+            
+            
+      }
+
+```
+Sample Response
+```json
+{
+    "_id": "61548df27f0874785c51cb2b",
+    "channel": "61548df2d76d-check",
+    "collaborators": [],
+    "created_at": "2021-09-29T16:01:54.882458Z",
+    "labels": [],
+    "organisation_id": "614679ee1a5607b13c00bcb7",
+    "tasks": [],
+    "title": "check",
+    "type": "todo",
+    "user_id": "123"
+}
+```
+
+- Invalid request
+  - Description: Invalid organisation_id 
+    - Status code: 400
+
+Sample Response
+```json
+{
+    "status": 404,
+    "message": "collection not found"
+}
+```
